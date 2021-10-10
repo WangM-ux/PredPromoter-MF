@@ -1,10 +1,9 @@
-## MSINGB
+## PredPromoter-MF(2L)
 
 
 
-### MSINGB：a novel computational method based on NGBoost for identifying microsatellite instability status from tumour mutation annotation data.
-
-In this work, we comprehensively study the feature selection strategy, classification model, performance evaluation metrics and webserver/software usability,  proposing a learning framework termed MSINGB, which achieves a better prediction performance on both the 10-fold cross-validation test and independent test compared with state-of-the-art methods.
+### PredPromoter-MF(2L): A novel approach of pro-moter prediction based on multi-source feature fuse and deep forest.
+This study proposes a novel two-layer predictor, PredPromoter-MF(2L), based on multi-source feature fuses and ensemble learning. PredPromoter-MF(2L) is developed based on various deep features learned by a pre-trained convolutional neural network model and fuse them with the two sequence-derived features. Feature selection based XGBoost is applied to reduce the dimensions of fuse features, and a cascade deep forest model is trained on the selected feature subset for promoter prediction.
 
 ***
 
@@ -16,13 +15,11 @@ The following python packages are required when building the stacking model.
 
 Python 3 >= 3.7
 
-Mlxtend >= 0.17.3
+keras >= 2.3.1
 
- Sklearn >= 0.0 
+Sklearn >= 0.0 
 
-NGBoost >= 0.3.6
-
-intervaltree >= 3.1.0
+tensorflow >= 2.0.0
 
 pandas >= 1.1.2
 
@@ -30,11 +27,11 @@ pandas >= 1.1.2
 
 
 
-### Running MSINGB
+### Running PredPromoter-MF(2L)
 
-open cmd in Windows or terminal in Linux, then cd to the MSINGB/codes folder which contains pre.py.
-</br>`python pre.py --maf [predicting data in maf format] -outdir [ predicting results in the folder]`</br>  </br>**Example:**
-</br>`python pre.py --maf ../data/example.maf -output ../out`</br>  
+open cmd in Windows or terminal in Linux, then cd to the PredPromoter-MF(2L) folder which contains main.py.
+</br>`python main.py --fasta [predicting data in fasta format]`</br>  </br>**Example:**
+</br>`python main.py --fasta .\dataset\test`</br>  
 
 ***
 
@@ -42,5 +39,9 @@ open cmd in Windows or terminal in Linux, then cd to the MSINGB/codes folder whi
 
 ### Announcements
 
-* In order to obtain the prediction results, please be sure to enter the file in MAF format. If you don't know the format of the MAF file, please download the example.maf file to check.
-* The intermediate feature file and result file generated in the process of running return prediction are saved in the output folder required by the user.
+* In order to obtain the prediction results, please be sure to enter the file in fasta format. If you don't know the format of the fasta file, please download the test file to check.
+
+
+### References
+* Chen Z, Zhao P, Li F, Marquez-Lago TT, Leier A, Revote J, Zhu Y, Powell DR, Akutsu T, Webb GI et al: iLearn: an integrated platform and meta-learner for feature engineering, machine-learning analysis and modeling of DNA, RNA and protein sequence data. **Brief Bioinform** 2020, 21(3):1047-1057.
+* Zhou ZH, Feng J: Deep Forest. **National Science Review** 2019, 6(1):74-86.
