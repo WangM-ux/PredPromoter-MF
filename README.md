@@ -43,5 +43,5 @@ open cmd in Windows or terminal in Linux, then cd to the PredPromoter-MF(2L) fol
 
 
 ### References
-* Chen Z, Zhao P, Li F, Marquez-Lago TT, Leier A, Revote J, Zhu Y, Powell DR, Akutsu T, Webb GI et al: iLearn: an integrated platform and meta-learner for feature engineering, machine-learning analysis and modeling of DNA, RNA and protein sequence data. **Brief Bioinform** 2020, 21(3):1047-1057.
-* Zhou ZH, Feng J: Deep Forest. **National Science Review** 2019, 6(1):74-86.
+* Chen Z, Zhao P, Li F, Marquez-Lago TT, Leier A, Revote J, Zhu Y, Powell DR, Akutsu T, Webb GI et al: iLearn: an integrated platform and meta-learner for feature engineering, machine-learning analysis and modeling of DNA, RNA and protein sequence data. *Briefings in bioinformatics* 2020, 21(3):1047-1057.
+* Zhou ZH, Feng J: Deep Forest. *National Science Review* 2019, 6(1):74-86.
