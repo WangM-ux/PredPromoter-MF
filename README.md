@@ -2,7 +2,7 @@
 
 
 
-### PredPromoter-MF(2L): A novel approach of pro-moter prediction based on multi-source feature fuse and deep forest.
+### PredPromoter-MF(2L): A novel approach of promoter prediction based on multi-source feature fusion and deep forest.
 This study proposes a novel two-layer predictor, PredPromoter-MF(2L), based on multi-source feature fuses and ensemble learning. PredPromoter-MF(2L) is developed based on various deep features learned by a pre-trained convolutional neural network model and fuse them with the two sequence-derived features. Feature selection based XGBoost is applied to reduce the dimensions of fuse features, and a cascade deep forest model is trained on the selected feature subset for promoter prediction.
 
 ***
